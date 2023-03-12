@@ -27,7 +27,7 @@ export default function EditableCard({
         <div className={css.card}>
             {!editMode && nameImg ? <img className={css.img}
                                          alt="картинка чебурека"
-                                         src={process.env.REACT_APP_API_URL + nameImg}/>
+                                         src={"http://45.67.59.147:3007/" + nameImg}/>
                 : null
             }
 
