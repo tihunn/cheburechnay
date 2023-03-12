@@ -1,0 +1,66 @@
+.card {
+  display: grid;
+  height: 100px;
+  width: auto;
+  margin: 20px 200px 20px 200px;
+  background: darksalmon;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+
+  grid-template-areas:
+    "img name price ico";
+
+  grid-template-columns: 4fr 11fr 4fr 3fr ;
+}
+
+.img {
+  grid-area: img;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  border-radius: 3px;
+}
+
+.name {
+  grid-area: name;
+  display: flex;
+}
+
+.price {
+  grid-area: price;
+  display: flex;
+  align-content: center;
+  color: darkred;
+  font: 20px bold ;
+}
+
+.ico {
+  grid-area: ico;
+  height: 20px;
+  width: 20px;
+  display: block;
+  margin: 10px;
+}
+
+.send {
+
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 12px;
+  padding: 0px;
+  background: antiquewhite;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.uploadImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  background: bisque;
+  border-radius: 30px;
+}
